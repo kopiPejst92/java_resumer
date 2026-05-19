@@ -1,4 +1,4 @@
-package com.leetcode.problems;
+package com.leetcode.problems.numeric;
 
 public class PrimeNumbers {
 
@@ -18,7 +18,7 @@ public class PrimeNumbers {
         return true;
     }
 
-    public static void main(String[] args){
+    static void main(String[] args){
         int notPassed=15342889;
         System.out.println(PrimeNumbers.isPrime(notPassed));
     }

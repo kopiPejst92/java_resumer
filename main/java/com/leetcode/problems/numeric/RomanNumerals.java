@@ -1,4 +1,4 @@
-package com.leetcode.convert;
+package com.leetcode.problems.numeric;
 
 public class RomanNumerals {
     public static String convertToRoman(int number) {
@@ -16,7 +16,7 @@ public class RomanNumerals {
         return stringBuilder.toString();
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int case1 = 3749;
         System.out.println(convertToRoman(case1));
 

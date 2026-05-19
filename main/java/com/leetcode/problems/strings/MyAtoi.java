@@ -2,10 +2,10 @@ public static class Solution {
     public int myAtoi(String s) {
         long value = 0;
         int index = 0;
-        int sign = 0;
+        int sign;
 
         s = s.trim();
-        if(s.length()==0) return 0;
+        if(s.isEmpty()) return 0;
 
         if (s.charAt(0)=='-' || s.charAt(0)=='+') {
             sign = s.charAt(0) == '-' ? -1 : 1;
@@ -15,7 +15,7 @@ public static class Solution {
         }
 
         while(index<s.length()) {
-            Character current=s.charAt(index);
+            char current=s.charAt(index);
             if (!Character.isDigit(current)) break;
             else{
 
@@ -32,7 +32,7 @@ public static class Solution {
     }
 }
 
-public static void main(String[] args) {
+void main(String[] args) {
     String[] cases={"42","   -042","1337c0d3","0-1","words and 987", " 0", " ", " -0"};
 
     Solution solution = new Solution();

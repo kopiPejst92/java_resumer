@@ -1,4 +1,4 @@
-package com.leetcode.problems;
+package com.leetcode.problems.strings;
 
 public class Palindrome {
     public static boolean isPalindrome(int x) {
@@ -48,7 +48,7 @@ public class Palindrome {
         return s.substring(start, start+maxLen);
     }
 
-public static void main(String[] args) {
+static void main(String[] args) {
     String case1 = "badbab", case2 = "cbbc", case3 = "kobylamalybok";
     System.out.println(Palindrome.getLongestPal(case1));
 }}

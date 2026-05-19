@@ -1,4 +1,4 @@
-package com.leetcode.parse;
+package com.leetcode.helpers;
 
 import java.io.IOException;
 import java.nio.file.Files;
