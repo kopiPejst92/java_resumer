@@ -3,9 +3,19 @@ package com.leetcode.sort;
 public interface Sort {
     String[] sort(String[] toBeSorted);
 
-    String[] swap(String[] raw, int n, int m);
-
     int[] sort(int[] toBeSorted);
 
-    int[] swap(int[] raw, int n, int m);
+    default int[] swap(int[] arrayToSort, int n, int m) {
+        int temp = arrayToSort[m];
+        arrayToSort[m] = arrayToSort[n];
+        arrayToSort[n] = temp;
+        return arrayToSort;
+    }
+
+    default String[] swap(String[] arrayToSort, int n, int m) {
+        String temp = arrayToSort[m];
+        arrayToSort[m] = arrayToSort[n];
+        arrayToSort[n] = temp;
+        return arrayToSort;
+    }
 }
