@@ -12,7 +12,6 @@ public class WeightSort {
                     swapElements(weights, j, j+1);
                 }
             }
-
         }
         return String.join(" ", weights);
     }
